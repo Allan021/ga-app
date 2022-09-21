@@ -17,8 +17,8 @@ export default class MyDocument extends Document {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-                optimize_id: '${process.env.NEXT_PUBLIC_GOOGLE_OPTIMIZE}',
-              page_path: window.location.pathname,
+                'optimize_id': '${process.env.NEXT_PUBLIC_GOOGLE_OPTIMIZE}',
+              'page_path': window.location.pathname,
             });
           `,
             }}
